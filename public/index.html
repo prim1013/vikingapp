@@ -7,7 +7,8 @@
     <meta name="keywords" content=""/>
 
     <!--Layout scripts in head to prevent FOUC-->
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/skel.min.js"></script>
     <script src="js/skel-init.js"></script>
 
@@ -26,31 +27,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
 </head>
 <body class="loading">
-<div id="wrapper">
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    <!-- Header -->
-    <header id="header">
-        <h1>The Viking App</h1>
-
-        <p>Something &nbsp;&bull;&nbsp; Something Else &nbsp;&bull;&nbsp; And again</p>
-        <nav>
-            <ul>
-                <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-                <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-                <li><a href="#" class="fa fa-dribbble"><span>Dribbble</span></a></li>
-                <li><a href="#" class="fa fa-github"><span>Github</span></a></li>
-                <li><a href="#" class="fa fa-envelope-o"><span>Email</span></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="main">
-    </div>
-    <!-- Footer -->
-    <footer id="footer">
-        <span class="copyright">&copy; Untitled. Copyright info.</span>
-    </footer>
+<div ng-view>
 </div>
 
 <!--JS LIBS-->

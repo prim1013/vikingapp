@@ -7,9 +7,11 @@
 @import url("font-awesome.min.css");
 
 /* Basic */
+#wrapper {
+    color: white;
+}
 
 body, input, select, textarea {
-    color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15pt;
     font-weight: 300 !important;
