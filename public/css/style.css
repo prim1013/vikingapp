@@ -526,6 +526,7 @@ a:hover {
     vertical-align: middle;
     width: 90%;
     margin-top: 70px;
+    z-index: 2;
 }
 
 #header h1 {
