@@ -8,10 +8,10 @@ var viking = angular
                 templateUrl: 'templates/list.html',
                 controller: 'ListController'
             } )
-            .when( '/landing', {
+            .when( '/home', {
                 templateUrl: 'templates/landing.html'
             } )
             .otherwise( {
-                redirectTo: 'landing'
+                redirectTo: '/home'
             } );
     } );
