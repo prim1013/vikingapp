@@ -8,6 +8,10 @@ var viking = angular
                 templateUrl: 'templates/list.html',
                 controller: 'ListController'
             } )
+            .when( '/beta', {
+                templateUrl: 'templates/beta.html',
+                controller: 'BetaController'
+            } )
             .when( '/home', {
                 templateUrl: 'templates/landing.html'
             } )
