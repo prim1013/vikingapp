@@ -1,7 +1,7 @@
 'use strict';
 
 var viking = angular
-    .module( 'viking', ['ngRoute'] )
+    .module( 'viking', ['ngRoute', 'ngAnimate'] )
     .config( function ( $routeProvider ) {
         $routeProvider
             .when( '/list', {
