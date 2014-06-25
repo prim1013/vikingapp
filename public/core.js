@@ -1,21 +1,29 @@
 'use strict';
 
 var viking = angular
-    .module( 'viking', ['ngRoute', 'ngAnimate'] )
-    .config( function ( $routeProvider ) {
-        $routeProvider
-            .when( '/list', {
-                templateUrl: 'templates/list.html',
-                controller: 'ListController'
+    .module( 'viking', ['ui.router', 'ngAnimate'] )
+    .config( function ( $stateProvider, $urlRouterProvider ) {
+
+        $urlRouterProvider.otherwise( '/' );
+
+        $stateProvider
+            .state( 'landing', {
+                url: '/',
+                templateUrl: 'templates/landing.html'
             } )
-            .when( '/beta', {
+            .state( 'beta', {
+                url: '/beta',
                 templateUrl: 'templates/beta.html',
                 controller: 'BetaController'
             } )
-            .when( '/home', {
-                templateUrl: 'templates/landing.html'
+            .state( 'beta.home', {
+                url: '/home',
+                templateUrl: 'templates/home.html',
+                controller: 'HomeController'
             } )
-            .otherwise( {
-                redirectTo: '/home'
+            .state( 'beta.list', {
+                url: '/list',
+                templateUrl: 'templates/list.html',
+                controller: 'ListController'
             } );
     } );
