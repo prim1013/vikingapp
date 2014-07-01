@@ -14,8 +14,6 @@ module.exports = function ( grunt ) {
                 files: {
                     'public/viking.min.js': [
                         'public/core.js',
-                        'public/js/skel.min.js',
-                        'public/js/skel-init.js',
                         'public/js/controllers/ListController.js'
                     ]
                 }
