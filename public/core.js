@@ -9,7 +9,8 @@ var viking = angular
         $stateProvider
             .state( 'landing', {
                 url: '/',
-                templateUrl: 'templates/landing.html'
+                templateUrl: 'templates/landing.html',
+                controller: 'LandingController'
             } )
             .state( 'beta', {
                 url: '/beta',
