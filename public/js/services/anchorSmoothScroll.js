@@ -7,6 +7,7 @@ viking.service( 'anchorSmoothScroll', function () {
         // This scrolling function
         // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
 
+        var maxSpeed = 20;
         var startY = currentYPosition();
         var stopY = elmYPosition( elementId );
         var distance = stopY > startY ? stopY - startY : startY - stopY;
@@ -15,7 +16,7 @@ viking.service( 'anchorSmoothScroll', function () {
             return;
         }
         var speed = Math.round( distance / 100 );
-        if ( speed >= 20 ) speed = 20;
+        if ( speed >= maxSpeed ) speed = maxSpeed;
         var step = Math.round( distance / 25 );
         var leapY = stopY > startY ? startY + step : startY - step;
         var timer = 0;
