@@ -21,7 +21,14 @@
 </head>
 <body class="loading">
 
-<header>Persistent Navigation</header>
+<header class="v-header" ng-controller="HeaderController">
+    <ul class="v-nav-list">
+        <li class="v-nav-item"><a ng-click="gotoElement('intro')">Intro</a></li>
+        <li class="v-nav-item">Story</li>
+        <li class="v-nav-item">App</li>
+        <li class="v-nav-item">Team</li>
+    </ul>
+</header>
 
 <div ui-view>
 </div>
@@ -44,6 +51,10 @@
 <script type="text/javascript" src="js/controllers/ListController.js"></script>
 <script type="text/javascript" src="js/controllers/BetaController.js"></script>
 <script type="text/javascript" src="js/controllers/LandingController.js"></script>
+<script type="text/javascript" src="js/controllers/HeaderController.js"></script>
+
+<!-- services -->
+<script type="text/javascript" src="js/services/anchorSmoothScroll.js"></script>
 
 </body>
 </html>
