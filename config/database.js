@@ -1,5 +1,4 @@
 module.exports = {
-
     // the database url to connect
-    url: 'mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu'
+    url: 'mongodb://root:qUsParA2@novus.modulusmongo.net:27017/Dexi2myp'
 };
