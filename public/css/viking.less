@@ -1,3 +1,5 @@
+@header-height: 80px;
+
 .v-header {
   background-color: rgba(0, 0, 0, 0.75);
   left: 0;
@@ -5,7 +7,7 @@
   text-align: right;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: @header-height;
   z-index: 1000;
   color: white;
 
@@ -35,6 +37,60 @@
 
   &:hover {
     background-color: gray;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  overflow: initial !important;
+
+  .img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0;
+    background: no-repeat center;
+    background-size: cover;
+  }
+  .img-1 {
+    background-image: url(../img/boat1.jpg);
+    z-index: initial;
+  }
+
+  .img-2 {
+    background-image: url(../img/wood1.jpg);
+    z-index: initial;
+  }
+
+  .img-3 {
+    background-image: url(../img/autumn_season-1600x900.jpg);
+    z-index: initial;
+  }
+
+  .img-4 {
+    background-image: url(../img/valley.jpg);
+    z-index: initial;
+  }
+
+  .description {
+    height: 50%;
+    background-color: white;
+  }
+
+  .description2 {
+    background-color: beige
   }
 }
 
