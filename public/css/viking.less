@@ -53,35 +53,64 @@ body {
   height: 100%;
   overflow: initial !important;
 
-  .img {
+  .section {
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
     padding: 0;
     background: no-repeat center;
     background-size: cover;
   }
+
+  .story {
+    color: white;
+  }
+
+  .intro {
+    color: black;
+    background-color: #ffffff;
+  }
+
+  .story-1 {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+  }
+
+  .story-3 {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+  }
+
   .img-1 {
     background-image: url(../img/boat1.jpg);
-    z-index: initial;
   }
 
   .img-2 {
     background-image: url(../img/wood1.jpg);
-    z-index: initial;
   }
 
   .img-3 {
     background-image: url(../img/autumn_season-1600x900.jpg);
-    z-index: initial;
   }
 
   .img-4 {
     background-image: url(../img/valley.jpg);
-    z-index: initial;
+  }
+
+  .img-5 {
+    background-image: url(../img/german_landscapes-1600x900.jpg);
+  }
+
+  .img-6 {
+    background-image: url(../img/japan_digital_nature-1680x1050.jpg);
+  }
+
+  .img-7 {
+    background-image: url(../img/mountain.jpg);
   }
 
   .description {
@@ -92,6 +121,11 @@ body {
   .description2 {
     background-color: beige
   }
+}
+
+input[type="email"] {
+  padding: 8px;
+  width: 200px;
 }
 
 @media screen and (min-width: 768px) {
