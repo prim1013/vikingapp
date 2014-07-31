@@ -1,4 +1,61 @@
 @header-height: 80px;
+@gray-text: #46525e;
+@epic-lettuce: #d4db26;
+
+@font-face {
+  font-family: UbuntuLight;
+  src: url("../fonts/Ubuntu-Light.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+.navigation {
+  font-family: ProximaNovaLight;
+  font-size: 30px;
+  color: @gray-text;
+}
+
+.title {
+  font-family: UbuntuLight;
+  font-size: 67px;
+  color: #ffffff;
+}
+
+.title-color {
+  color: @gray-text !important;
+}
+
+.trip {
+  font-family: UbuntuLight;
+  font-size: 20px;
+}
+
+.trip-raid {
+  color: @epic-lettuce;
+}
+
+.trip-journey {
+  color: #94bcae;
+}
+
+.trip-expedition {
+  color: #7b8994;
+}
+
+.subtitle {
+  font-family: ProximaNovaLight;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.paragraph {
+  font-family: ProximaNovaLight;
+  font-size: 22px;
+  color: #ffffff;
+}
 
 .v-header {
   background-color: rgba(0, 0, 0, 0.75);
@@ -74,7 +131,7 @@ body {
   }
 
   .progress-step-inner {
-    background-color: gray;
+    background-color: @gray-text;
     width: 12px;
     height: 12px;
     border-radius: 20px;
@@ -84,7 +141,7 @@ body {
   }
 
   .progress-step {
-    border: 2px solid gray;
+    border: 2px solid @gray-text;
     border-radius: 20px;
     width: 20px;
     height: 20px;
@@ -99,14 +156,6 @@ body {
   .intro {
     color: black;
     background-color: #ffffff;
-  }
-
-  .story-white {
-    color: white;
-  }
-
-  .story-black {
-    color: black;
   }
 
   .position-1 {
@@ -170,14 +219,23 @@ input[type="email"] {
   width: 200px;
   font-size: 12px;
   z-index: 100;
+  height: 40px;
+  border: none;
 }
 
 input[type="button"] {
   font-size: 12px;
-  border-radius: 2px;
-  background-color: #deff64;
+  background-color: @epic-lettuce;
+  color: @gray-text;
   border: 0;
-  height: 33px;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+}
+
+#send {
+  position: relative;
+  left: -9px;
 }
 
 @media screen and (min-width: 768px) {
