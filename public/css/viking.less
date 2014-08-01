@@ -2,6 +2,7 @@
 @gray-text: #46525e;
 @epic-lettuce: #d4db26;
 @fjord: #94bcae;
+@expedition: #7b8994;
 
 @font-face {
   font-family: UbuntuLight;
@@ -91,7 +92,7 @@
 }
 
 .trip-expedition {
-  color: #7b8994;
+  color: @expedition;
 }
 
 .subtitle {
@@ -175,6 +176,23 @@ body {
     background-color: #ffffff;
   }
 
+  .trip-type-container {
+    font-family: UbuntuLight;
+    margin-top: 3em;
+    font-size: 1.7em;
+
+    .trip-type {
+      margin: 0 2em 0 .3em;
+      display: inline-block;
+    }
+
+    p {
+      font-family: ProximaNovaLight;
+      font-size: .5em;
+      margin-top: 10px;
+    }
+  }
+
   .position-1 {
     left: 10%;
     top: 40%;
@@ -188,6 +206,11 @@ body {
   .position-3 {
     left: 12%;
     top: 24%;
+  }
+
+  .position-4 {
+    left: 55%;
+    top: 37%;
   }
 
   .img-1 {
@@ -218,7 +241,7 @@ body {
     position: relative;
     width: 50%;
     left: 45%;
-    top: 23%;
+    top: 25%;
   }
 
   .description {
@@ -256,6 +279,55 @@ input[type="button"] {
 #send {
   position: relative;
   left: -9px;
+}
+
+.raid-hexagon {
+  .hexagon(@epic-lettuce);
+}
+
+.journey-hexagon {
+  .hexagon(@fjord);
+}
+
+.expedition-hexagon {
+  .hexagon(@expedition);
+}
+
+.hexagon(@color) {
+  position: relative;
+  width: 40px;
+  height: 23.09px;
+  background-color: #ffffff;
+  margin: 11.55px 0;
+  border-left: solid 2px @color;
+  border-right: solid 2px @color;
+  display: inline-block;
+  top: 10px;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 28.28px;
+    height: 28.28px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 3.8579px;
+  }
+
+  &:before {
+    top: -14.1421px;
+    border-top: solid 2.8284px @color;
+    border-right: solid 2.8284px @color;
+  }
+
+  &:after {
+    bottom: -14.1421px;
+    border-bottom: solid 2.8284px @color;
+    border-left: solid 2.8284px @color;
+  }
 }
 
 @media screen and (min-width: 768px) {
