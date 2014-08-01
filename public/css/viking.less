@@ -14,8 +14,37 @@
 
 .navigation {
   font-family: ProximaNovaLight;
-  font-size: 30px;
-  color: @gray-text;
+  font-size: 1.8em;
+  left: 0;
+  position: fixed;
+  text-align: right;
+  vertical-align: middle;
+  top: 0;
+  width: 100%;
+  height: @header-height;
+  z-index: 1000;
+  background-color: #ffffff;
+  opacity: .5;
+
+  ul {
+    margin: 0;
+    position: relative;
+    bottom: .6em;
+
+    li {
+      display: inline-block;
+      margin: 1.5em 2em 0 0;
+
+      a {
+        color: @gray-text;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 .title {
@@ -55,46 +84,6 @@
   font-family: ProximaNovaLight;
   font-size: 1.05em;
   color: #ffffff;
-}
-
-.v-header {
-  background-color: rgba(0, 0, 0, 0.75);
-  left: 0;
-  position: fixed;
-  text-align: right;
-  top: 0;
-  width: 100%;
-  height: @header-height;
-  z-index: 1000;
-  color: white;
-
-  .v-nav-list {
-    list-style: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .v-nav-item {
-      display: inline-block;
-      padding: 1em;
-      cursor: pointer;
-    }
-  }
-}
-
-.v-list-item {
-  background-color: lightgray;
-  margin: 10px;
-  border: 1px solid black;
-  border-radius: 3px;
-  text-align: center;
-  cursor: pointer;
-
-  &:hover {
-    background-color: gray;
-  }
 }
 
 html {

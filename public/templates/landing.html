@@ -1,5 +1,15 @@
 <div class="container-fluid">
 
+    <header class="navigation">
+        <ul>
+            <li><a href="#section-story" data-menu-top="250p">Story</a></li>
+            <li><a href="#section-app" data-menu-top="730p">App</a></li>
+            <li><a>Profiles</a></li>
+            <li><a>News</a></li>
+            <li><a>Team</a></li>
+        </ul>
+    </header>
+
     <!--Scrolling goes up in increments of 225 with buffer of 25-->
     <div class="section img-1"
          data-0p="transform:translate(0,0%)">
@@ -34,10 +44,11 @@
         </div>
     </div>
 
-    <div class="section img-2"
+    <div id="section-story"
+         class="section img-2"
          data-25p="transform:translate(0,100%)"
          data-250p="transform:translate(0,0%)">
-        <div class="story position-1">
+        <div class="story position-3">
             <h1 class="title">Got Lots of Gear?</h1>
 
             <p class="paragraph">Outdoor activities like cycling, kayaking or hiking need<br>a lot of gear to make the strip safe and memorable. We<br>make packing smarter so you can play harder.</p>
@@ -47,7 +58,7 @@
     <div class="section img-3"
          data-255p="transform:translate(-100%,0%)"
          data-480p="transform:translate(0,0%)">
-        <div class="story position-1">
+        <div class="story position-3">
             <h1 class="title">Ever Forget Something?</h1>
 
             <p class="paragraph">Unfortunately, remembering what you need is a lot more difficult<br>than you think. One missing item can ruin an entire adventure.</p>
@@ -87,7 +98,8 @@
 
     </div>
 
-    <div class="section intro"
+    <div id="section-app"
+         class="section intro"
          data-505p="transform:translate(0,100%)"
          data-730p="transform:translate(0,0%)">
         <div class="story position-3"
