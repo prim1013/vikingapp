@@ -1,6 +1,7 @@
 @header-height: 80px;
 @gray-text: #46525e;
 @epic-lettuce: #d4db26;
+@fjord: #94bcae;
 
 @font-face {
   font-family: UbuntuLight;
@@ -24,10 +25,10 @@
   height: @header-height;
   z-index: 1000;
   background-color: #ffffff;
-  opacity: .5;
+  opacity: .85;
 
   ul {
-    margin: 0;
+    margin: 0 10em 0 0;
     position: relative;
     bottom: .6em;
 
@@ -36,14 +37,33 @@
       margin: 1.5em 2em 0 0;
 
       a {
-        color: @gray-text;
         text-decoration: none;
+        color: @gray-text;
 
         &:hover {
           cursor: pointer;
         }
       }
     }
+  }
+}
+
+.social-icons {
+  position: relative;
+  right: 1em;
+  bottom: 1.9em;
+  float: right;
+
+  .fa {
+    margin: 0 1em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: @fjord;
   }
 }
 
@@ -67,7 +87,7 @@
 }
 
 .trip-journey {
-  color: #94bcae;
+  color: @fjord;
 }
 
 .trip-expedition {
