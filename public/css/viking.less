@@ -1,4 +1,4 @@
-@header-height: 80px;
+@header-height: 3.4em;
 @gray-text: #46525e;
 @epic-lettuce: #d4db26;
 @fjord: #94bcae;
@@ -16,7 +16,7 @@
 
 .navigation {
   font-family: ProximaNovaLight;
-  font-size: 1.8em;
+  font-size: 1.7em;
   left: 0;
   position: fixed;
   text-align: right;
@@ -78,11 +78,6 @@
   color: @gray-text !important;
 }
 
-.trip {
-  font-family: UbuntuLight;
-  font-size: 20px;
-}
-
 .trip-raid {
   color: @epic-lettuce;
 }
@@ -135,8 +130,6 @@ body {
     position: fixed;
     top: 26%;
     left: 4%;
-    width: 25px;
-    height: 67px;
     z-index: 100;
   }
 
@@ -155,7 +148,7 @@ body {
     border-radius: 20px;
     width: 20px;
     height: 20px;
-    margin: 35px 0px;
+    margin: 2.5em 0;
   }
 
   .progress-step-inner-white {
@@ -193,6 +186,18 @@ body {
     }
   }
 
+  .trip-checklist {
+    margin-top: 1.5em;
+
+    .trip-type {
+      font-size: 1.3em;
+      position: relative;
+      top: -.38em;
+      left: 5px;
+      margin-right: 3em;
+    }
+  }
+
   .position-1 {
     left: 10%;
     top: 40%;
@@ -215,33 +220,57 @@ body {
 
   .img-1 {
     background-image: url(../img/1_intro_bg.png);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    background-position: center;
   }
 
   .img-2 {
     background-image: url(../img/2_gotlotsogear_bg.png);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    background-position: center;
   }
 
   .img-3 {
     background-image: url(../img/3_everforgetsomething_bg.png);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    background-position: center;
   }
 
   .img-4 {
     background-image: url(../img/4_morning_run_bg.png);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    background-position: center;
   }
 
   .img-5 {
     background-image: url(../img/5_snowboardingdaytrip_bg.png);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    background-position: center;
   }
 
   .img-6 {
     background-image: url(../img/6_summitmtrenier_bg.png);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    background-position: center;
   }
 
   .img-gear {
     position: relative;
     width: 50%;
-    left: 45%;
-    top: 25%;
+    left: 61em;
+    top: 20em;
+  }
+
+  .img-gearstorm {
+    position: relative;
+    left: 31em;
+    top: -35em;
   }
 
   .description {
@@ -285,12 +314,32 @@ input[type="button"] {
   .hexagon(@epic-lettuce);
 }
 
+.raid-circle {
+  .circle(@epic-lettuce);
+}
+
 .journey-hexagon {
   .hexagon(@fjord);
 }
 
+.journey-circle {
+  .circle(@fjord);
+}
+
 .expedition-hexagon {
   .hexagon(@expedition);
+}
+
+.expedition-circle {
+  .circle(@expedition);
+}
+
+.circle(@color) {
+  display: inline-block;
+  border: 2px solid @color;
+  border-radius: 20px;
+  width: 2em;
+  height: 2em;
 }
 
 .hexagon(@color) {
