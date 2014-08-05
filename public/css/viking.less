@@ -14,94 +14,6 @@
   src: url("../fonts/ProximaNova-Light.otf") format("opentype");
 }
 
-.navigation {
-  font-family: ProximaNovaLight;
-  font-size: 1.7em;
-  left: 0;
-  position: fixed;
-  text-align: right;
-  vertical-align: middle;
-  top: 0;
-  width: 100%;
-  height: @header-height;
-  z-index: 1000;
-  background-color: #ffffff;
-  opacity: .85;
-
-  ul {
-    margin: 0 10em 0 0;
-    position: relative;
-    bottom: .6em;
-
-    li {
-      display: inline-block;
-      margin: 1.5em 2em 0 0;
-
-      a {
-        text-decoration: none;
-        color: @gray-text;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}
-
-.social-icons {
-  position: relative;
-  right: 1em;
-  bottom: 1.9em;
-  float: right;
-
-  .fa {
-    margin: 0 1em;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  a {
-    color: @fjord;
-  }
-}
-
-.title {
-  font-family: UbuntuLight;
-  font-size: 3.2em;
-  color: #ffffff;
-}
-
-.title-color {
-  color: @gray-text !important;
-}
-
-.trip-raid {
-  color: @epic-lettuce;
-}
-
-.trip-journey {
-  color: @fjord;
-}
-
-.trip-expedition {
-  color: @expedition;
-}
-
-.subtitle {
-  font-family: ProximaNovaLight;
-  font-size: 1.7em;
-  color: #ffffff;
-}
-
-.paragraph {
-  font-family: ProximaNovaLight;
-  font-size: 1.05em;
-  color: #ffffff;
-}
-
 html {
   height: 100%;
 }
@@ -283,6 +195,106 @@ body {
   }
 }
 
+.navigation {
+  font-family: ProximaNovaLight;
+  font-size: 1.7em;
+  left: 0;
+  position: fixed;
+  text-align: right;
+  vertical-align: middle;
+  top: 0;
+  width: 100%;
+  height: @header-height;
+  z-index: 1000;
+  background-color: #ffffff;
+  opacity: .85;
+
+  ul {
+    margin: 0 10em 0 0;
+    position: relative;
+    bottom: .6em;
+
+    li {
+      display: inline-block;
+      margin: 1.5em 2em 0 0;
+
+      a {
+        text-decoration: none;
+        color: @gray-text;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.social-icons {
+  position: relative;
+  right: 1em;
+  bottom: 1.9em;
+  float: right;
+
+  .fa {
+    margin: 0 1em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: @expedition;
+  }
+}
+
+.title {
+  font-family: UbuntuLight;
+  font-size: 3.2em;
+  color: #ffffff;
+}
+
+.title-color {
+  color: @gray-text !important;
+}
+
+.trip-raid {
+  color: @epic-lettuce;
+}
+
+.trip-journey {
+  color: @fjord;
+}
+
+.trip-expedition {
+  color: @expedition;
+}
+
+.subtitle {
+  font-family: ProximaNovaLight;
+  font-size: 1.7em;
+  color: #ffffff;
+}
+
+.paragraph {
+  font-family: ProximaNovaLight;
+  font-size: 1.05em;
+  color: #ffffff;
+}
+
+.logo {
+  width: 153px;
+  float: left;
+  margin-left: 2em;
+  position: relative;
+  top: .23em;
+}
+
+.logo-color {
+  fill: @expedition;
+}
+
 input[type="email"] {
   padding: 8px;
   width: 200px;
@@ -377,6 +389,38 @@ input[type="button"] {
     border-bottom: solid 2.8284px @color;
     border-left: solid 2.8284px @color;
   }
+}
+
+.social-hexagon {
+  text-align: initial;
+}
+
+.social-hexagon {
+  position: relative;
+  width: 54px;
+  height: 31.18px;
+  background-color: #64C7CC;
+  margin: 15.59px 0;
+}
+
+.social-hexagon:before,
+.social-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 27px solid transparent;
+  border-right: 27px solid transparent;
+}
+
+.social-hexagon:before {
+  bottom: 100%;
+  border-bottom: 15.59px solid #64C7CC;
+}
+
+.social-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 15.59px solid #64C7CC;
 }
 
 @media screen and (min-width: 768px) {
