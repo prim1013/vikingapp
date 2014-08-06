@@ -1,8 +1,12 @@
-@header-height: 3.4em;
+@header-height: 5.8em;
 @gray-text: #46525e;
 @epic-lettuce: #d4db26;
 @fjord: #94bcae;
 @expedition: #7b8994;
+
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
 
 @font-face {
   font-family: UbuntuLight;
@@ -27,214 +31,187 @@ body {
   height: 100%;
   overflow: initial !important;
 
-  .section {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 0;
-    background: no-repeat center;
-    background-size: cover;
+}
+
+.section {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.activity-progress {
+  position: fixed;
+  top: 26%;
+  left: 4%;
+  z-index: 100;
+}
+
+.progress-step-inner {
+  background-color: @gray-text;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.progress-step {
+  border: 2px solid @gray-text;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: 2.5em 0;
+}
+
+.progress-step-inner-white {
+  background-color: #ffffff;
+}
+
+.progress-step-white {
+  border: 2px solid #ffffff;
+}
+
+.story {
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.intro {
+  color: black;
+  background-color: #ffffff;
+}
+
+.trip-type-container {
+  font-family: UbuntuLight;
+  margin-top: 3em;
+  font-size: 1.7em;
+
+  .trip-type {
+    margin: 0 2em 0 .3em;
+    display: inline-block;
   }
 
-  .activity-progress {
-    position: fixed;
-    top: 26%;
-    left: 4%;
-    z-index: 100;
-  }
-
-  .progress-step-inner {
-    background-color: @gray-text;
-    width: 12px;
-    height: 12px;
-    border-radius: 20px;
-    position: relative;
-    left: 2px;
-    top: 2px;
-  }
-
-  .progress-step {
-    border: 2px solid @gray-text;
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
-    margin: 2.5em 0;
-  }
-
-  .progress-step-inner-white {
-    background-color: #ffffff;
-  }
-
-  .progress-step-white {
-    border: 2px solid #ffffff;
-  }
-
-  .story {
-    position: absolute;
-    font-size: 1.5em;
-  }
-
-  .intro {
-    color: black;
-    background-color: #ffffff;
-  }
-
-  .trip-type-container {
-    font-family: UbuntuLight;
-    margin-top: 3em;
-    font-size: 1.7em;
-
-    .trip-type {
-      margin: 0 2em 0 .3em;
-      display: inline-block;
-    }
-
-    p {
-      font-family: ProximaNovaLight;
-      font-size: .5em;
-      margin-top: 10px;
-    }
-  }
-
-  .trip-checklist {
-    margin-top: 1.5em;
-
-    .trip-type {
-      font-size: 1.3em;
-      position: relative;
-      top: -.38em;
-      left: 5px;
-      margin-right: 3em;
-    }
-  }
-
-  .position-1 {
-    left: 10%;
-    top: 40%;
-  }
-
-  .position-2 {
-    left: 50%;
-    top: 8%;
-  }
-
-  .position-3 {
-    left: 12%;
-    top: 24%;
-  }
-
-  .position-4 {
-    left: 55%;
-    top: 37%;
-  }
-
-  .img-1 {
-    background-image: url(../img/1_intro_bg.png);
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //    background-position: center;
-  }
-
-  .img-2 {
-    background-image: url(../img/2_gotlotsogear_bg.png);
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //    background-position: center;
-  }
-
-  .img-3 {
-    background-image: url(../img/3_everforgetsomething_bg.png);
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //    background-position: center;
-  }
-
-  .img-4 {
-    background-image: url(../img/4_morning_run_bg.png);
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //    background-position: center;
-  }
-
-  .img-5 {
-    background-image: url(../img/5_snowboardingdaytrip_bg.png);
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //    background-position: center;
-  }
-
-  .img-6 {
-    background-image: url(../img/6_summitmtrenier_bg.png);
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //    background-position: center;
-  }
-
-  .img-gear {
-    position: relative;
-    width: 50%;
-    left: 61em;
-    top: 20em;
-  }
-
-  .img-gearstorm {
-    position: relative;
-    left: 31em;
-    top: -35em;
-  }
-
-  .description {
-    height: 50%;
-    background-color: white;
-  }
-
-  .description2 {
-    background-color: beige
+  p {
+    font-family: ProximaNovaLight;
+    font-size: .5em;
+    margin-top: 10px;
   }
 }
 
-.navigation {
+.trip-checklist {
+  margin-top: 1.5em;
+
+  .trip-type {
+    font-size: 1.3em;
+    position: relative;
+    top: -.38em;
+    left: 5px;
+    margin-right: 3em;
+  }
+}
+
+.position-1 {
+  left: 10%;
+  top: 40%;
+}
+
+.position-2 {
+  left: 50%;
+  top: 8%;
+}
+
+.position-3 {
+  left: 12%;
+  top: 24%;
+}
+
+.position-4 {
+  left: 55%;
+  top: 37%;
+}
+
+.img-1 {
+  background-image: url(../img/1_intro_bg.png);
+  //    background-repeat: no-repeat;
+  //    background-size: contain;
+  //    background-position: center;
+}
+
+.img-2 {
+  background-image: url(../img/2_gotlotsogear_bg.png);
+  //    background-repeat: no-repeat;
+  //    background-size: contain;
+  //    background-position: center;
+}
+
+.img-3 {
+  background-image: url(../img/3_everforgetsomething_bg.png);
+  //    background-repeat: no-repeat;
+  //    background-size: contain;
+  //    background-position: center;
+}
+
+.img-4 {
+  background-image: url(../img/4_morning_run_bg.png);
+  //    background-repeat: no-repeat;
+  //    background-size: contain;
+  //    background-position: center;
+}
+
+.img-5 {
+  background-image: url(../img/5_snowboardingdaytrip_bg.png);
+  //    background-repeat: no-repeat;
+  //    background-size: contain;
+  //    background-position: center;
+}
+
+.img-6 {
+  background-image: url(../img/6_summitmtrenier_bg.png);
+  //    background-repeat: no-repeat;
+  //    background-size: contain;
+  //    background-position: center;
+}
+
+.img-gear {
+  position: relative;
+  width: 50%;
+  left: 61em;
+  top: 20em;
+}
+
+.img-gearstorm {
+  position: relative;
+  left: 31em;
+  top: -35em;
+}
+
+.description {
+  height: 50%;
+  background-color: white;
+}
+
+.description2 {
+  background-color: beige
+}
+
+.navbar {
+  z-index: 1000;
   font-family: ProximaNovaLight;
-  font-size: 1.7em;
-  left: 0;
-  position: fixed;
   text-align: right;
   vertical-align: middle;
-  top: 0;
-  width: 100%;
   height: @header-height;
-  z-index: 1000;
   background-color: #ffffff;
   opacity: .85;
-
-  ul {
-    margin: 0 10em 0 0;
-    position: relative;
-    bottom: .6em;
-
-    li {
-      display: inline-block;
-      margin: 1.5em 2em 0 0;
-
-      a {
-        text-decoration: none;
-        color: @gray-text;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
 }
 
 .social-icons {
-  position: relative;
-  right: 1em;
-  bottom: 1.9em;
-  float: right;
+  display: inline-block;
 
   .fa {
     margin: 0 1em;
@@ -251,7 +228,11 @@ body {
 
 .title {
   font-family: UbuntuLight;
-  font-size: 3.2em;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-family: ProximaNovaLight;
   color: #ffffff;
 }
 
@@ -269,12 +250,6 @@ body {
 
 .trip-expedition {
   color: @expedition;
-}
-
-.subtitle {
-  font-family: ProximaNovaLight;
-  font-size: 1.7em;
-  color: #ffffff;
 }
 
 .paragraph {
@@ -423,7 +398,26 @@ input[type="button"] {
   border-top: 15.59px solid #64C7CC;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: @screen-md-min) {
+  .title {
+    font-size: 3.2em;
+  }
+
+  .subtitle {
+    font-size: 1.7em;
+  }
+
+  .navbar {
+    ul {
+      position: relative;
+      top: .6em;
+      margin-left: 2em;
+      font-size: 1.7em;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
   .beta {
     margin-left: 50px;
   }
