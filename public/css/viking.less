@@ -41,13 +41,13 @@ body {
   left: 0;
   padding: 0;
   background: no-repeat center;
-  background-size: cover;
+//  background-size: contain;
 }
 
 .activity-progress {
   position: fixed;
-  top: 26%;
-  left: 4%;
+  top: 3em;
+  left: 1em;
   z-index: 100;
 }
 
@@ -88,7 +88,6 @@ body {
 
 .trip-type-container {
   font-family: UbuntuLight;
-  margin-top: 3em;
   font-size: 1.7em;
 
   .trip-type {
@@ -115,24 +114,14 @@ body {
   }
 }
 
-.position-1 {
-  left: 10%;
-  top: 40%;
+.position-1, .position-3, .position-4 {
+  top: 13em;
+  left: 2em;
 }
 
 .position-2 {
-  left: 50%;
-  top: 8%;
-}
-
-.position-3 {
-  left: 12%;
-  top: 24%;
-}
-
-.position-4 {
-  left: 55%;
-  top: 37%;
+  left: 5em;
+  top: 7em;
 }
 
 .img-1 {
@@ -381,7 +370,7 @@ input[type="button"] {
   border-top: 15.59px solid #64C7CC;
 }
 
-@media (min-width: @screen-md-min) {
+@media (min-width: @screen-sm-min) {
   .logo {
     width: 153px;
     margin-left: 2em;
@@ -399,6 +388,39 @@ input[type="button"] {
     font-size: 1.5em;
   }
 
+  .section {
+    background-size: cover;
+  }
+
+  .position-1 {
+    left: 10%;
+    top: 40%;
+  }
+
+  .position-2 {
+    left: 50%;
+    top: 8%;
+  }
+
+  .position-3 {
+    left: 12%;
+    top: 24%;
+  }
+
+  .position-4 {
+    left: 55%;
+    top: 37%;
+  }
+
+  .activity-progress {
+    top: 26%;
+    left: 4%;
+  }
+
+  .trip-type-container {
+    margin-top: 3em;
+  }
+
   .trip-checklist-row {
     display: inline-block;
   }
@@ -414,9 +436,7 @@ input[type="button"] {
       font-size: 1.7em;
     }
   }
-}
 
-@media (min-width: @screen-sm-min) {
   .beta {
     margin-left: 50px;
   }
