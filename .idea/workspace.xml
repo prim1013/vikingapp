@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78460b9b-7ae8-46b6-87d9-d0e476f61008" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/viking.less" afterPath="$PROJECT_DIR$/public/css/viking.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/landing.html" afterPath="$PROJECT_DIR$/public/templates/landing.html" />
     </list>
     <ignored path="vikingapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viking.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="viking.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/viking.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5549374" vertical-offset="2321" max-vertical-offset="3056">
+            <state vertical-scroll-proportion="-15.96" vertical-offset="2321" max-vertical-offset="3056">
               <caret line="400" column="17" selection-start-line="400" selection-start-column="17" selection-end-line="400" selection-end-column="17" />
               <folding>
                 <element signature="e#294#395#0" expanded="false" />
@@ -91,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="landing.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/templates/landing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.96" vertical-offset="1054" max-vertical-offset="3984">
-              <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.29207233" vertical-offset="1070" max-vertical-offset="4000">
+              <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
               <folding>
                 <element signature="tag#svg#0;tag#a#0;tag#div#0;tag#nav#0;tag#div#0" expanded="false" />
               </folding>
@@ -154,8 +153,8 @@
         <option value="$PROJECT_DIR$/public/js/directives/logo.js" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/templates/landing.html" />
         <option value="$PROJECT_DIR$/public/css/viking.less" />
+        <option value="$PROJECT_DIR$/public/templates/landing.html" />
       </list>
     </option>
   </component>
@@ -863,19 +862,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.96" vertical-offset="1054" max-vertical-offset="3984">
-          <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-          <folding>
-            <element signature="tag#svg#0;tag#a#0;tag#div#0;tag#nav#0;tag#div#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/viking.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5549374" vertical-offset="2321" max-vertical-offset="3056">
+        <state vertical-scroll-proportion="-15.96" vertical-offset="2321" max-vertical-offset="3056">
           <caret line="400" column="17" selection-start-line="400" selection-start-column="17" selection-end-line="400" selection-end-column="17" />
           <folding>
             <element signature="e#294#395#0" expanded="false" />
@@ -932,6 +921,16 @@
             <element signature="e#5509#5618#0" expanded="false" />
             <element signature="e#5666#5797#0" expanded="false" />
             <element signature="e#5822#5881#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/landing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29207233" vertical-offset="1070" max-vertical-offset="4000">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <folding>
+            <element signature="tag#svg#0;tag#a#0;tag#div#0;tag#nav#0;tag#div#0" expanded="false" />
           </folding>
         </state>
       </provider>
