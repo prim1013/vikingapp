@@ -205,24 +205,11 @@ body {
   font-family: ProximaNovaLight;
   text-align: right;
   vertical-align: middle;
-  height: @header-height;
   background-color: #ffffff;
   opacity: .85;
-}
 
-.social-icons {
-  display: inline-block;
-
-  .fa {
-    margin: 0 1em;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  a {
-    color: @expedition;
+  a:hover {
+    cursor: pointer;
   }
 }
 
@@ -259,11 +246,9 @@ body {
 }
 
 .logo {
-  width: 153px;
-  float: left;
-  margin-left: 2em;
+  width: 80px;
   position: relative;
-  top: .23em;
+  top: -.5em;
 }
 
 .logo-color {
@@ -399,6 +384,11 @@ input[type="button"] {
 }
 
 @media (min-width: @screen-md-min) {
+  .logo {
+    width: 153px;
+    margin-left: 2em;
+  }
+
   .title {
     font-size: 3.2em;
   }
@@ -408,6 +398,8 @@ input[type="button"] {
   }
 
   .navbar {
+    height: @header-height;
+
     ul {
       position: relative;
       top: .6em;
