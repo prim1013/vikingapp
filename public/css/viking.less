@@ -41,7 +41,7 @@ body {
   left: 0;
   padding: 0;
   background: no-repeat center;
-//  background-size: contain;
+  //  background-size: contain;
 }
 
 .activity-progress {
@@ -115,8 +115,13 @@ body {
   }
 }
 
-.position-1, .position-3, .position-4 {
+.position-1, .position-4 {
   top: 13em;
+  left: 2em;
+}
+
+.position-3 {
+  top: 3em;
   left: 2em;
 }
 
@@ -280,23 +285,23 @@ input[type="button"] {
 }
 
 .raid-hexagon {
-  .hexagon(@epic-lettuce);
+  .hexagon-sm(@epic-lettuce);
+}
+
+.journey-hexagon {
+  .hexagon-sm(@fjord);
+}
+
+.expedition-hexagon {
+  .hexagon-sm(@expedition);
 }
 
 .raid-circle {
   .circle(@epic-lettuce);
 }
 
-.journey-hexagon {
-  .hexagon(@fjord);
-}
-
 .journey-circle {
   .circle(@fjord);
-}
-
-.expedition-hexagon {
-  .hexagon(@expedition);
 }
 
 .expedition-circle {
@@ -343,6 +348,41 @@ input[type="button"] {
 
   &:after {
     bottom: -14.1421px;
+    border-bottom: solid 2.8284px @color;
+    border-left: solid 2.8284px @color;
+  }
+}
+
+.hexagon-sm(@color) {
+  position: relative;
+  width: 24px;
+  height: 13.86px;
+  background-color: #ffffff;
+  margin: 6.93px 0;
+  border-left: solid 2px @color;
+  border-right: solid 2px @color;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 16.97px;
+    height: 16.97px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 1.5147px;
+  }
+
+  &:before {
+    top: -8.4853px;
+    border-top: solid 2.8284px @color;
+    border-right: solid 2.8284px @color;
+  }
+
+  &:after {
+    bottom: -8.4853px;
     border-bottom: solid 2.8284px @color;
     border-left: solid 2.8284px @color;
   }
@@ -400,6 +440,18 @@ input[type="button"] {
 
   .section {
     background-size: cover;
+  }
+
+  .raid-hexagon {
+    .hexagon(@epic-lettuce);
+  }
+
+  .journey-hexagon {
+    .hexagon(@fjord);
+  }
+
+  .expedition-hexagon {
+    .hexagon(@expedition);
   }
 
   .position-1 {
