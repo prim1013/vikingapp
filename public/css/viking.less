@@ -285,10 +285,8 @@ input[type="button"] {
 }
 
 .team-row {
-  margin-top: 60px;
 
   .bio {
-    width: 50%;
     display: inline-block;
     margin-right: -4px; // whitespace fix
   }
@@ -304,7 +302,7 @@ input[type="button"] {
     background-image: url(../img/viking_sprite1.png);
     width: 153px;
     height: 152px;
-    display: inline-block;
+    display: none;
   }
 
   .rick {
@@ -541,7 +539,16 @@ input[type="button"] {
   }
 
   .team-row {
+    margin-top: 60px;
     width: 60em;
+
+    .headshot {
+      display: inline-block;
+    }
+
+    .bio {
+      width: 50%;
+    }
   }
 
   .beta {
