@@ -13,6 +13,7 @@ viking.directive( 'activityProgressStep', function () {
             scope.step.opacitySteps.forEach( function ( os ) {
                 $( element[0] ).attr( os.attribute, os.value );
             } );
+
             skrollr.get().refresh( element );
         }
     };

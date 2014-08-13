@@ -33,14 +33,14 @@ body {
 
 }
 
-.section {
-  position: fixed;
+.scroll-container {
   height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 0;
+}
+
+.section {
   background: no-repeat center;
+  height: 100%;
+  position: relative;
   //  background-size: contain;
 }
 
@@ -88,19 +88,7 @@ body {
 }
 
 .trip-type-container {
-  font-family: UbuntuLight;
-  font-size: 1.7em;
-
-  .trip-type {
-    margin: 0 2em 0 .3em;
-    display: inline-block;
-  }
-
-  p {
-    font-family: ProximaNovaLight;
-    font-size: .5em;
-    margin-top: 10px;
-  }
+  display: none;
 }
 
 .trip-checklist {
@@ -115,19 +103,9 @@ body {
   }
 }
 
-.position-1, .position-4 {
-  top: 13em;
-  left: 2em;
-}
-
-.position-3 {
-  top: 3em;
-  left: 2em;
-}
-
-.position-2 {
+.position-story, .position-trip, .position-app, .position-right, .position-profiles, .position-team {
+  top: 5em;
   left: 1em;
-  top: 7em;
 }
 
 .img-1 {
@@ -181,17 +159,8 @@ body {
   background-image: url(../img/team_bg_image.png);
 }
 
-.img-gear {
-  position: relative;
-  width: 50%;
-  left: 61em;
-  top: 20em;
-}
-
-.img-gearstorm {
-  position: relative;
-  left: 31em;
-  top: -35em;
+.img-gear, .img-gearstorm {
+  display: none;
 }
 
 .description {
@@ -295,7 +264,6 @@ input[type="button"] {
     display: inline-block;
     color: @gray-text;
     position: relative;
-    left: 15px;
   }
 
   .headshot {
@@ -458,18 +426,14 @@ input[type="button"] {
   border-top: 15.59px solid #64C7CC;
 }
 
+#section-team {
+  height: 165%;
+}
+
 @media (min-width: @screen-sm-min) {
   .logo {
     width: 153px;
     margin-left: 2em;
-  }
-
-  .title {
-    font-size: 3.2em;
-  }
-
-  .subtitle {
-    font-size: 1.7em;
   }
 
   .story {
@@ -477,6 +441,12 @@ input[type="button"] {
   }
 
   .section {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    //    left: 0;
+    padding: 0;
     background-size: cover;
   }
 
@@ -492,22 +462,37 @@ input[type="button"] {
     .hexagon(@expedition);
   }
 
-  .position-1 {
+  .img-gear {
+    display: block;
+    position: relative;
+    width: 50%;
+    left: 35em;
+    top: 20em;
+  }
+
+  .img-gearstorm {
+    display: block;
+    position: relative;
+    left: 31em;
+    top: -35em;
+  }
+
+  .position-story {
     left: 10%;
     top: 40%;
   }
 
-  .position-2 {
+  .position-trip {
     left: 50%;
     top: 8%;
   }
 
-  .position-3 {
+  .position-app {
     left: 12%;
     top: 24%;
   }
 
-  .position-4 {
+  .position-right {
     left: 55%;
     top: 37%;
   }
@@ -519,7 +504,21 @@ input[type="button"] {
   }
 
   .trip-type-container {
+    display: block;
     margin-top: 3em;
+
+    font-family: UbuntuLight;
+    font-size: 1.7em;
+
+    .trip-type {
+      display: inline-block;
+    }
+
+    p {
+      font-family: ProximaNovaLight;
+      font-size: .5em;
+      margin-top: 10px;
+    }
   }
 
   .trip-checklist-row {
@@ -534,7 +533,7 @@ input[type="button"] {
       position: relative;
       top: .6em;
       margin-left: 2em;
-      font-size: 1.7em;
+      font-size: 1.5em;
     }
   }
 
@@ -547,11 +546,56 @@ input[type="button"] {
     }
 
     .bio {
-      width: 50%;
+      width: 38%;
+      font-size: .6em;
     }
+
+    .bio-text {
+      left: 15px;
+    }
+  }
+
+  #section-team {
+    height: 100%;
   }
 
   .beta {
     margin-left: 50px;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .trip-type-container {
+    .trip-type {
+      margin: 0 2em 0 .3em;
+    }
+  }
+
+  .img-gear {
+    left: 61em;
+  }
+
+  .title {
+    font-size: 3.2em;
+  }
+
+  .subtitle {
+    font-size: 1.7em;
+  }
+
+  .team-row {
+    .bio {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+  .navbar {
+    height: @header-height;
+    opacity: .85;
+
+    ul {
+      font-size: 1.7em;
+    }
   }
 }
