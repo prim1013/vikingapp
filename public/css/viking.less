@@ -18,23 +18,8 @@
   src: url("../fonts/ProximaNova-Light.otf") format("opentype");
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  min-height: 100%;
-  height: 100%;
-}
-
-.main {
-  height: 100%;
-  overflow: initial !important;
-
-}
-
-.scroll-container {
-  height: 100%;
+  height: auto !important;
 }
 
 .section {
@@ -78,15 +63,6 @@ body {
   border: 2px solid #ffffff;
 }
 
-.story {
-  position: absolute;
-}
-
-.intro {
-  color: black;
-  background-color: #ffffff;
-}
-
 .trip-type-container {
   display: none;
 }
@@ -109,6 +85,7 @@ body {
 }
 
 .img-1 {
+  z-index: 1;
   background-image: url(../img/1_intro_bg.png);
   //    background-repeat: no-repeat;
   //    background-size: contain;
@@ -116,14 +93,14 @@ body {
 }
 
 .img-2 {
-  background-image: url(../img/2_gotlotsogear_bg.png);
+  background-image: url(../img/3_everforgetsomething_bg.png);
   //    background-repeat: no-repeat;
   //    background-size: contain;
   //    background-position: center;
 }
 
 .img-3 {
-  background-image: url(../img/3_everforgetsomething_bg.png);
+  background-image: url(../img/2_gotlotsogear_bg.png);
   //    background-repeat: no-repeat;
   //    background-size: contain;
   //    background-position: center;
@@ -326,7 +303,7 @@ input[type="button"] {
   position: relative;
   width: 40px;
   height: 23.09px;
-  background-color: #ffffff;
+  background-color: transparent;
   margin: 11.55px 0;
   border-left: solid 2px @color;
   border-right: solid 2px @color;
@@ -363,7 +340,7 @@ input[type="button"] {
   position: relative;
   width: 24px;
   height: 13.86px;
-  background-color: #ffffff;
+  background-color: transparent;
   margin: 6.93px 0;
   border-left: solid 2px @color;
   border-right: solid 2px @color;
@@ -434,20 +411,6 @@ input[type="button"] {
   .logo {
     width: 153px;
     margin-left: 2em;
-  }
-
-  .story {
-    font-size: 1.5em;
-  }
-
-  .section {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    //    left: 0;
-    padding: 0;
-    background-size: cover;
   }
 
   .raid-hexagon {
@@ -573,14 +536,6 @@ input[type="button"] {
     left: -4em;
   }
 
-  .title {
-    font-size: 3.2em;
-  }
-
-  .subtitle {
-    font-size: 1.7em;
-  }
-
   .team-row {
     .bio {
       width: 50%;
@@ -596,4 +551,22 @@ input[type="button"] {
       font-size: 1.7em;
     }
   }
+}
+
+// moving this up in the file breaks everything..... ummmmmm
+.segment {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.segment > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.segment-navigation {
+  display: none;
 }

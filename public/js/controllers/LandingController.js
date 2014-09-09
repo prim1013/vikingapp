@@ -64,6 +64,10 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
         if ( !(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test( navigator.userAgent || navigator.vendor || window.opera ) ) {
             var s = skrollr.init();
             skrollr.menu.init( s );
+            skrollr.decks.init( {
+                segment: 'segment',
+                nav: 'segment-navigation'
+            } );
         }
     };
 
