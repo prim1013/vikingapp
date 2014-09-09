@@ -67,8 +67,13 @@ body {
   display: none;
 }
 
+.title-trip {
+  text-align: center;
+}
+
 .trip-checklist {
   margin-top: 1.5em;
+  text-align: center;
 
   .trip-type {
     font-size: 1.3em;
@@ -79,10 +84,15 @@ body {
   }
 }
 
-.position-story, .position-trip, .position-app, .position-right, .position-profiles, .position-team {
+.position-story, .position-app, .position-right, .position-profiles, .position-team {
   position: absolute;
   top: 5em;
   left: 1em;
+}
+
+.position-trip {
+  position: relative;
+  display: inline-block;
 }
 
 .img-1 {
@@ -192,7 +202,7 @@ body {
 
 .paragraph {
   font-family: ProximaNovaLight;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #ffffff;
 }
 
@@ -429,27 +439,20 @@ input[type="button"] {
     .hexagon(@expedition);
   }
 
-  .img-gear {
-    display: block;
-    position: relative;
-    left: -30%;
-  }
-
-  .img-gearstorm {
-    display: block;
-    position: relative;
-    left: 31em;
-    top: -35em;
-  }
-
   .position-story {
     left: 10%;
     top: 40%;
   }
 
   .position-trip {
-    left: 60%;
-    top: 20%;
+    top: 12em;
+    left: 45%;
+  }
+
+  .img-gear {
+    display: block;
+    position: relative;
+    width: 1000px; // TODO: Remove this once have all gear images same size
   }
 
   .position-app {
