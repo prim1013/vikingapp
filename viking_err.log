@@ -1,3 +1,0 @@
-Wed, 10 Sep 2014 14:32:03 GMT morgan deprecated morgan(options): use morgan("default", options) instead at node_modules\express\lib\router\layer.js:76:5
-Wed, 10 Sep 2014 14:32:03 GMT morgan deprecated default format: use combined format at node_modules\express\lib\router\layer.js:76:5
-^C
