@@ -29,6 +29,10 @@ body {
   //  background-size: contain;
 }
 
+.story {
+  margin-top: 5em;
+}
+
 .activity-progress {
   position: fixed;
   top: 3em;
@@ -67,32 +71,13 @@ body {
   display: none;
 }
 
-.title-trip {
-  text-align: center;
-}
-
 .trip-checklist {
   margin-top: 1.5em;
   text-align: center;
 
   .trip-type {
-    font-size: 2em;
-    position: relative;
-    top: -4px;
-    left: 5px;
-    margin-right: 2em;
+    font-size: 1.5em;
   }
-}
-
-.position-story, .position-app, .position-right, .position-profiles, .position-team {
-  position: absolute;
-  top: 5em;
-  left: 1em;
-}
-
-.position-trip {
-  position: relative;
-  display: inline-block;
 }
 
 .img-1 {
@@ -175,7 +160,7 @@ body {
 .title {
   font-family: UbuntuLight;
   color: #ffffff;
-  font-size: 3em;
+  text-align: center;
 }
 
 .subtitle {
@@ -249,6 +234,7 @@ input[type="button"] {
   .bio {
     display: inline-block;
     margin-right: -4px; // whitespace fix
+    margin-top: 100px;
   }
 
   .bio-text {
@@ -261,7 +247,7 @@ input[type="button"] {
     background-image: url(../img/viking_sprite1.png);
     width: 153px;
     height: 152px;
-    display: none;
+    display: inline-block;
   }
 
   .rick {
@@ -293,24 +279,31 @@ input[type="button"] {
   .hexagon-sm(@expedition);
 }
 
+.trip-checklist-row {
+  text-align: center;
+  display: block;
+}
+
 .raid-circle {
-  .circle(@epic-lettuce);
+  .circle(1em);
+  border: 2px solid @epic-lettuce;
 }
 
 .journey-circle {
-  .circle(@fjord);
+  .circle(1em);
+  border: 2px solid @fjord;
 }
 
 .expedition-circle {
-  .circle(@expedition);
+  .circle(1em);
+  border: 2px solid @expedition;
 }
 
-.circle(@color) {
+.circle(@size) {
   display: inline-block;
-  border: 2px solid @color;
   border-radius: 20px;
-  width: 2em;
-  height: 2em;
+  width: @size;
+  height: @size;
 }
 
 .hexagon(@color) {
@@ -439,44 +432,9 @@ input[type="button"] {
     .hexagon(@expedition);
   }
 
-  .position-story {
-    left: 10%;
-    top: 40%;
-  }
-
-  .position-profiles, .position-team {
-    top: 15%;
-    left: 5%;
-  }
-
-  .position-team {
-    width: 100%;
-  }
-
-  .position-trip {
-    top: 12em;
-    left: 45%;
-  }
-
   .img-gear {
     display: block;
     position: relative;
-  }
-
-  .position-app {
-    left: 12%;
-    top: 24%;
-  }
-
-  .position-right {
-    left: 55%;
-    top: 37%;
-  }
-
-  .activity-progress {
-    top: 26%;
-    left: 4%;
-    display: block;
   }
 
   .trip-type-container {
@@ -488,6 +446,7 @@ input[type="button"] {
 
     .trip-type {
       display: inline-block;
+      max-width: 25%;
     }
 
     p {
@@ -512,37 +471,54 @@ input[type="button"] {
       font-size: 1.5em;
     }
   }
-
-  .team-row {
-    margin-top: 60px;
-
-    .headshot {
-      display: inline-block;
-    }
-
-    .bio {
-      width: 38%;
-      font-size: .6em;
-    }
-
-    .bio-text {
-      left: 15px;
-    }
-  }
-
-  #section-team {
-    height: 100%;
-  }
-
-  .beta {
-    margin-left: 50px;
-  }
 }
 
 @media (min-width: @screen-lg-min) {
+
+  .story-intro {
+    top: 375px;
+  }
+
+  .story-pitch {
+    top: 400px;
+
+    > p {
+      max-width: 75%;
+    }
+  }
+
+  .story-app {
+    top: 300px;
+
+    > p {
+      max-width: 75%;
+    }
+  }
+
+  .story-trip {
+    top: 170px;
+  }
+
+  .story-team, .story-profiles {
+    top: 100px;
+  }
+
   .trip-type-container {
     .trip-type {
       margin: 0 2em 0 .3em;
+    }
+  }
+
+  .trip-checklist {
+    margin-top: 1.5em;
+    text-align: center;
+
+    .trip-type {
+      font-size: 2em;
+      position: relative;
+      top: -4px;
+      left: 5px;
+      margin-right: 2em;
     }
   }
 
@@ -550,6 +526,10 @@ input[type="button"] {
     .bio {
       width: 50%;
       font-size: 1em;
+    }
+
+    .bio-text {
+      max-width: 50%;
     }
   }
 
@@ -564,6 +544,23 @@ input[type="button"] {
 
   .title {
     font-size: 3em;
+    text-align: inherit;
+  }
+
+  .title-trip {
+    text-align: center;
+  }
+
+  .raid-circle {
+    .circle(2em);
+  }
+
+  .journey-circle {
+    .circle(2em);
+  }
+
+  .expedition-circle {
+    .circle(2em);
   }
 }
 
@@ -572,7 +569,7 @@ input[type="button"] {
   position: relative;
   vertical-align: middle;
   background-size: cover;
-  height: 568px;
+  min-height: 568px;
 }
 
 .segment-navigation {
