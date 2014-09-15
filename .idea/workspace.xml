@@ -29,8 +29,8 @@
       <file leaf-file-name="viking.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/viking.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36288998" vertical-offset="6947" max-vertical-offset="9312">
-              <caret line="448" column="19" selection-start-line="448" selection-start-column="19" selection-end-line="448" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.41215107" vertical-offset="3413" max-vertical-offset="9328">
+              <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -853,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/viking.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36288998" vertical-offset="6947" max-vertical-offset="9312">
-          <caret line="448" column="19" selection-start-line="448" selection-start-column="19" selection-end-line="448" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.41215107" vertical-offset="3413" max-vertical-offset="9328">
+          <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
           <folding />
         </state>
       </provider>
