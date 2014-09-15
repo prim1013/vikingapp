@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78460b9b-7ae8-46b6-87d9-d0e476f61008" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/landing.html" afterPath="$PROJECT_DIR$/public/templates/landing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/viking.less" afterPath="$PROJECT_DIR$/public/css/viking.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vikingapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="viking.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/viking.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4679803" vertical-offset="7475" max-vertical-offset="9312">
-              <caret line="485" column="21" selection-start-line="485" selection-start-column="21" selection-end-line="485" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.36288998" vertical-offset="6947" max-vertical-offset="9312">
+              <caret line="448" column="19" selection-start-line="448" selection-start-column="19" selection-end-line="448" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -854,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/viking.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4679803" vertical-offset="7475" max-vertical-offset="9312">
-          <caret line="485" column="21" selection-start-line="485" selection-start-column="21" selection-end-line="485" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.36288998" vertical-offset="6947" max-vertical-offset="9312">
+          <caret line="448" column="19" selection-start-line="448" selection-start-column="19" selection-end-line="448" selection-end-column="19" />
           <folding />
         </state>
       </provider>
