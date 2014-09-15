@@ -176,12 +176,24 @@ body {
   color: @epic-lettuce;
 }
 
+.trip-raid-gear {
+  color: @gray-text;
+}
+
 .trip-journey {
   color: @fjord;
 }
 
+.trip-journey-gear {
+  color: #fff;
+}
+
 .trip-expedition {
   color: @expedition;
+}
+
+.trip-expedition-gear {
+  color: @gray-text;
 }
 
 .paragraph {
@@ -267,115 +279,103 @@ input[type="button"] {
   }
 }
 
-.raid-hexagon {
-  .hexagon-sm(@epic-lettuce);
-}
-
-.journey-hexagon {
-  .hexagon-sm(@fjord);
-}
-
-.expedition-hexagon {
-  .hexagon-sm(@expedition);
-}
-
 .trip-checklist-row {
   text-align: center;
   display: block;
 }
 
-.raid-circle {
-  .circle(1em);
-  border: 2px solid @epic-lettuce;
+.gray-hexagon {
+  .hexagon-sm(@gray-text);
 }
 
-.journey-circle {
-  .circle(1em);
-  border: 2px solid @fjord;
-}
-
-.expedition-circle {
-  .circle(1em);
-  border: 2px solid @expedition;
-}
-
-.circle(@size) {
-  display: inline-block;
-  border-radius: 20px;
-  width: @size;
-  height: @size;
+.white-hexagon {
+  .hexagon-sm(#fff);
 }
 
 .hexagon(@color) {
-  position: relative;
-  width: 40px;
-  height: 23.09px;
-  background-color: transparent;
-  margin: 11.55px 0;
-  border-left: solid 2px @color;
-  border-right: solid 2px @color;
+  border: 2px solid @color;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
-  top: 10px;
-
-  &:before, &:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 28.28px;
-    height: 28.28px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 3.8579px;
-  }
-
-  &:before {
-    top: -14.1421px;
-    border-top: solid 2.8284px @color;
-    border-right: solid 2.8284px @color;
-  }
-
-  &:after {
-    bottom: -14.1421px;
-    border-bottom: solid 2.8284px @color;
-    border-left: solid 2.8284px @color;
-  }
+  position: relative;
+//  position: relative;
+//  width: 40px;
+//  height: 23.09px;
+//  background-color: transparent;
+//  margin: 11.55px 0;
+//  border-left: solid 2px @color;
+//  border-right: solid 2px @color;
+//  display: inline-block;
+//  top: 10px;
+//
+//  &:before, &:after {
+//    content: "";
+//    position: absolute;
+//    z-index: 1;
+//    width: 28.28px;
+//    height: 28.28px;
+//    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+//    -ms-transform: scaleY(0.5774) rotate(-45deg);
+//    transform: scaleY(0.5774) rotate(-45deg);
+//    background-color: inherit;
+//    left: 3.8579px;
+//  }
+//
+//  &:before {
+//    top: -14.1421px;
+//    border-top: solid 2.8284px @color;
+//    border-right: solid 2.8284px @color;
+//  }
+//
+//  &:after {
+//    bottom: -14.1421px;
+//    border-bottom: solid 2.8284px @color;
+//    border-left: solid 2.8284px @color;
+//  }
 }
 
 .hexagon-sm(@color) {
+  border: 2px solid @color;
+  border-radius: 20px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
   position: relative;
-  width: 24px;
-  height: 13.86px;
-  background-color: transparent;
-  margin: 6.93px 0;
-  border-left: solid 2px @color;
-  border-right: solid 2px @color;
-
-  &:before, &:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 16.97px;
-    height: 16.97px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 1.5147px;
-  }
-
-  &:before {
-    top: -8.4853px;
-    border-top: solid 2.8284px @color;
-    border-right: solid 2.8284px @color;
-  }
-
-  &:after {
-    bottom: -8.4853px;
-    border-bottom: solid 2.8284px @color;
-    border-left: solid 2.8284px @color;
-  }
+  margin-right: 5px;
+//  position: relative;
+//  width: 24px;
+//  height: 13.86px;
+//  background-color: transparent;
+//  margin: 6.93px 0;
+//  border-left: solid 2px @color;
+//  border-right: solid 2px @color;
+//  display: inline-block;
+//
+//  &:before, &:after {
+//    content: "";
+//    position: absolute;
+//    z-index: 1;
+//    width: 16.97px;
+//    height: 16.97px;
+//    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+//    -ms-transform: scaleY(0.5774) rotate(-45deg);
+//    transform: scaleY(0.5774) rotate(-45deg);
+//    background-color: inherit;
+//    left: 1.5147px;
+//  }
+//
+//  &:before {
+//    top: -8.4853px;
+//    border-top: solid 2.8284px @color;
+//    border-right: solid 2.8284px @color;
+//  }
+//
+//  &:after {
+//    bottom: -8.4853px;
+//    border-bottom: solid 2.8284px @color;
+//    border-left: solid 2.8284px @color;
+//  }
 }
 
 .social-hexagon {
@@ -432,6 +432,14 @@ input[type="button"] {
     .hexagon(@expedition);
   }
 
+  .gray-hexagon {
+    .hexagon(@gray-text);
+  }
+
+  .white-hexagon {
+    .hexagon(#fff);
+  }
+
   .img-gear {
     display: block;
     position: relative;
@@ -447,6 +455,18 @@ input[type="button"] {
     .trip-type {
       display: inline-block;
       max-width: 28%;
+
+      .raid-hexagon {
+        top: 6px;
+      }
+
+      .journey-hexagon {
+        top: 6px;
+      }
+
+      .expedition-hexagon {
+        top: 6px;
+      }
     }
 
     p {
@@ -496,7 +516,7 @@ input[type="button"] {
   }
 
   .story-trip {
-    top: 170px;
+    top: 150px;
   }
 
   .story-team, .story-profiles {
@@ -549,18 +569,6 @@ input[type="button"] {
 
   .title-trip {
     text-align: center;
-  }
-
-  .raid-circle {
-    .circle(2em);
-  }
-
-  .journey-circle {
-    .circle(2em);
-  }
-
-  .expedition-circle {
-    .circle(2em);
   }
 }
 
