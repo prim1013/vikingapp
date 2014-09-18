@@ -1,7 +1,36 @@
 'use strict';
 
 viking.controller( 'LandingController', function LandingController ( $scope ) {
-
+    var profiles = [
+        {
+            name: 'Hans Yang',
+            description: "Hans gets ready for his work day by scoring a few waves every morning at the El Porto break in Manhattan Beach. He uses the Viking app to stay organized so he doesn't miss a single swell.",
+            leftImg: '../img/hans_left_470x641.png',
+            topRightImg : '../img/hans_topright_550x320.png',
+            bottomRightImg : '../img/hans_bottomright_gear_550x320.png'
+        },
+        {
+            name: 'Lisa Wright',
+            description: 'Need description',
+            leftImg: '../img/lisa_left_470x641.png',
+            topRightImg : '../img/lisa_topright_550x320.png',
+            bottomRightImg : '../img/lisa_bottomright_gear_550x320.png'
+        },
+        {
+            name: 'Greg Wilsey',
+            description: 'Need description',
+            leftImg: '../img/greg_left_470x641.png',
+            topRightImg : '../img/greg_topright_550x320.png',
+            bottomRightImg : '../img/greg_bottomright_gear_550x320.png'
+        },
+        {
+            name: 'Steve King',
+            description: 'Need description',
+            leftImg: '../img/steve_left_470x641.png',
+            topRightImg : '../img/steve_topright_550x320.png',
+            bottomRightImg : '../img/steve_bottomright_gear_550x320.png'
+        }
+    ];
     var initialize = function () {
         $scope.storyProgress = {
             opacitySteps: [
@@ -69,6 +98,13 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
                 nav: 'segment-navigation'
             } );
         }
+
+        $scope.currentProfile = profiles[0];
+    };
+
+    $scope.currentProfile = {};
+    $scope.loadProfile = function ( index ) {
+        $scope.currentProfile = profiles[index];
     };
 
     initialize();
