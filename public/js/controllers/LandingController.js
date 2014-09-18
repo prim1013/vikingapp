@@ -11,21 +11,21 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
         },
         {
             name: 'Lisa Wright',
-            description: 'Need description',
+            description: 'Bio coming soon',
             leftImg: '../img/lisa_left_470x641.png',
             topRightImg : '../img/lisa_topright_550x320.png',
             bottomRightImg : '../img/lisa_bottomright_gear_550x320.png'
         },
         {
             name: 'Greg Wilsey',
-            description: 'Need description',
+            description: 'Bio coming soon',
             leftImg: '../img/greg_left_470x641.png',
             topRightImg : '../img/greg_topright_550x320.png',
             bottomRightImg : '../img/greg_bottomright_gear_550x320.png'
         },
         {
             name: 'Steve King',
-            description: 'Need description',
+            description: 'Bio coming soon',
             leftImg: '../img/steve_left_470x641.png',
             topRightImg : '../img/steve_topright_550x320.png',
             bottomRightImg : '../img/steve_bottomright_gear_550x320.png'
