@@ -7,28 +7,40 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
             description: "Hans gets ready for his work day by scoring a few waves every morning at the El Porto break in Manhattan Beach. He uses the Viking app to stay organized so he doesn't miss a single swell.",
             leftImg: '../img/hans_left_470x641.png',
             topRightImg : '../img/hans_topright_550x320.png',
-            bottomRightImg : '../img/hans_bottomright_gear_550x320.png'
+            bottomRightImg : '../img/hans_bottomright_gear_550x320.png',
+            activity: 'Surf',
+            temperature: 'Warm',
+            tripType: 'Raid'
         },
         {
             name: 'Lisa Wright',
             description: 'Bio coming soon',
             leftImg: '../img/lisa_left_470x641.png',
             topRightImg : '../img/lisa_topright_550x320.png',
-            bottomRightImg : '../img/lisa_bottomright_gear_550x320.png'
+            bottomRightImg : '../img/lisa_bottomright_gear_550x320.png',
+            activity: 'Surf',
+            temperature: 'Warm',
+            tripType : 'Raid'
         },
         {
             name: 'Greg Wilsey',
             description: 'Bio coming soon',
             leftImg: '../img/greg_left_470x641.png',
             topRightImg : '../img/greg_topright_550x320.png',
-            bottomRightImg : '../img/greg_bottomright_gear_550x320.png'
+            bottomRightImg : '../img/greg_bottomright_gear_550x320.png',
+            activity: 'Surf',
+            temperature: 'Warm',
+            tripType : 'Raid'
         },
         {
             name: 'Steve King',
             description: 'Bio coming soon',
             leftImg: '../img/steve_left_470x641.png',
             topRightImg : '../img/steve_topright_550x320.png',
-            bottomRightImg : '../img/steve_bottomright_gear_550x320.png'
+            bottomRightImg : '../img/steve_bottomright_gear_550x320.png',
+            activity: 'Surf',
+            temperature: 'Warm',
+            tripType : 'Raid'
         }
     ];
     var initialize = function () {
