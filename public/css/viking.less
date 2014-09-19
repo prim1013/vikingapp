@@ -475,6 +475,9 @@ input[type="button"] {
 }
 
 @media (min-width: @screen-sm-min) {
+}
+
+@media (min-width: @screen-lg-min) {
   .logo {
     width: 153px;
     margin-left: 2em;
@@ -503,41 +506,6 @@ input[type="button"] {
   .img-gear {
     display: block;
     position: relative;
-  }
-
-  .trip-type-container {
-    display: block;
-    margin-top: 3em;
-
-    font-family: UbuntuLight;
-    font-size: 1.7em;
-
-    .trip-type {
-      display: inline-block;
-      max-width: 28%;
-
-      .raid-hexagon {
-        top: 6px;
-      }
-
-      .journey-hexagon {
-        top: 6px;
-      }
-
-      .expedition-hexagon {
-        top: 6px;
-      }
-    }
-
-    p {
-      font-family: ProximaNovaLight;
-      font-size: .7em;
-      margin-top: 10px;
-    }
-  }
-
-  .trip-checklist-row {
-    display: inline-block;
   }
 
   .navbar {
@@ -595,9 +563,6 @@ input[type="button"] {
   .profile-circle {
     top: 8px;
   }
-}
-
-@media (min-width: @screen-lg-min) {
 
   .story-intro {
     top: 375px;
@@ -628,9 +593,39 @@ input[type="button"] {
   }
 
   .trip-type-container {
+    display: block;
+    margin-top: 3em;
+
+    font-family: UbuntuLight;
+    font-size: 1.7em;
+
     .trip-type {
+      display: inline-block;
+      max-width: 28%;
       margin: 0 2em 0 .3em;
+
+      .raid-hexagon {
+        top: 6px;
+      }
+
+      .journey-hexagon {
+        top: 6px;
+      }
+
+      .expedition-hexagon {
+        top: 6px;
+      }
     }
+
+    p {
+      font-family: ProximaNovaLight;
+      font-size: .7em;
+      margin-top: 10px;
+    }
+  }
+
+  .trip-checklist-row {
+    display: inline-block;
   }
 
   .trip-checklist {
