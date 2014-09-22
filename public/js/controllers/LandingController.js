@@ -24,7 +24,7 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
         },
         {
             name: 'Greg Wilsey',
-            description: 'Bio coming soon',
+            description: 'Driven by the passion to always experience new places and cultures Greg has summited Everest Base Camp and Kilimanjaro.',
             leftImg: '../img/greg_left_470x641.png',
             topRightImg : '../img/greg_topright_550x320.png',
             bottomRightImg : '../img/greg_bottomright_gear_550x320.png',
@@ -34,7 +34,7 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
         },
         {
             name: 'Steve King',
-            description: 'Bio coming soon',
+            description: 'Steve never says "NO" to a river trip. Planning and packing all the gear needed to survive for a month or more floating through the wilderness is no small task. The Viking app makes sure Steve remembers his chapstick as well as all of the pulleys and prusiks for his rescue kit.',
             leftImg: '../img/steve_left_470x641.png',
             topRightImg : '../img/steve_topright_550x320.png',
             bottomRightImg : '../img/steve_bottomright_gear_550x320.png',
