@@ -4,16 +4,15 @@ module.exports = function ( app ) {
 
     // get all contacts
     app.get( '/api/contacts', function ( req, res ) {
-        res.send( 'success' );
-//        Contact.find( function ( err, contacts ) {
-//
-//            // if there is an error retrieving, send the error. nothing after res.send(err) will execute
-//            if ( err ) {
-//                res.send( err );
-//            }
-//
-//            res.json( contacts );
-//        } );
+        Contact.find( function ( err, contacts ) {
+
+            // if there is an error retrieving, send the error. nothing after res.send(err) will execute
+            if ( err ) {
+                res.send( err );
+            }
+
+            res.json( contacts );
+        } );
     } );
 
     // create favorite and send back after creation
@@ -28,6 +27,22 @@ module.exports = function ( app ) {
             }
 
             res.json( contact );
+        } );
+    } );
+
+    app.delete( '/api/contacts/:id', function ( req, res ) {
+        Contact.remove( {
+            _id: req.params.id
+        }, function ( err ) {
+            if ( err )
+                res.send( err );
+
+            Contact.find( function ( err, favorites ) {
+                if ( err ) {
+                    res.send( err );
+                }
+                res.json( favorites );
+            } );
         } );
     } );
 
