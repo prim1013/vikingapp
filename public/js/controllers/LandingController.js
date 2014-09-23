@@ -37,7 +37,7 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             description: 'Steve never says "NO" to a river trip. Planning and packing all the gear needed to survive for a month or more floating through the wilderness is no small task. The Viking app makes sure Steve remembers his chapstick as well as all of the pulleys and prusiks for his rescue kit.',
             leftImg: '../img/steve_left_470x641.png',
             topRightImg: '../img/steve_topright_550x320.png',
-            bottomRightImg: '../img/steve_bottomright_gear_550x320.png',
+            bottomRightImg: '../img/stevek_bottomright_gear_550x320.png',
             activity: 'Surf',
             temperature: 'Warm',
             tripType: 'Raid'
