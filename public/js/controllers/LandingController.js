@@ -1,13 +1,13 @@
 'use strict';
 
-viking.controller( 'LandingController', function LandingController ( $scope ) {
+viking.controller( 'LandingController', function LandingController ( $scope, contactService ) {
     var profiles = [
         {
             name: 'Hans Yang',
             description: "Hans gets ready for his work day by scoring a few waves every morning at the El Porto break in Manhattan Beach. He uses the Viking app to stay organized so he doesn't miss a single swell.",
             leftImg: '../img/hans_left_470x641.png',
-            topRightImg : '../img/hans_topright_550x320.png',
-            bottomRightImg : '../img/hans_bottomright_gear_550x320.png',
+            topRightImg: '../img/hans_topright_550x320.png',
+            bottomRightImg: '../img/hans_bottomright_gear_550x320.png',
             activity: 'Surf',
             temperature: 'Warm',
             tripType: 'Raid'
@@ -16,31 +16,31 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
             name: 'Lisa Wright',
             description: 'Bio coming soon',
             leftImg: '../img/lisa_left_470x641.png',
-            topRightImg : '../img/lisa_topright_550x320.png',
-            bottomRightImg : '../img/lisa_bottomright_gear_550x320.png',
+            topRightImg: '../img/lisa_topright_550x320.png',
+            bottomRightImg: '../img/lisa_bottomright_gear_550x320.png',
             activity: 'Surf',
             temperature: 'Warm',
-            tripType : 'Raid'
+            tripType: 'Raid'
         },
         {
             name: 'Greg Wilsey',
             description: 'Driven by the passion to always experience new places and cultures Greg has summited Everest Base Camp and Kilimanjaro.',
             leftImg: '../img/greg_left_470x641.png',
-            topRightImg : '../img/greg_topright_550x320.png',
-            bottomRightImg : '../img/greg_bottomright_gear_550x320.png',
+            topRightImg: '../img/greg_topright_550x320.png',
+            bottomRightImg: '../img/greg_bottomright_gear_550x320.png',
             activity: 'Surf',
             temperature: 'Warm',
-            tripType : 'Raid'
+            tripType: 'Raid'
         },
         {
             name: 'Steve King',
             description: 'Steve never says "NO" to a river trip. Planning and packing all the gear needed to survive for a month or more floating through the wilderness is no small task. The Viking app makes sure Steve remembers his chapstick as well as all of the pulleys and prusiks for his rescue kit.',
             leftImg: '../img/steve_left_470x641.png',
-            topRightImg : '../img/steve_topright_550x320.png',
-            bottomRightImg : '../img/steve_bottomright_gear_550x320.png',
+            topRightImg: '../img/steve_topright_550x320.png',
+            bottomRightImg: '../img/steve_bottomright_gear_550x320.png',
             activity: 'Surf',
             temperature: 'Warm',
-            tripType : 'Raid'
+            tripType: 'Raid'
         }
     ];
     var initialize = function () {
@@ -115,8 +115,14 @@ viking.controller( 'LandingController', function LandingController ( $scope ) {
     };
 
     $scope.currentProfile = {};
+    $scope.emailAddress = '';
     $scope.loadProfile = function ( index ) {
         $scope.currentProfile = profiles[index];
+    };
+    $scope.addContact = function () {
+        if ( $scope.emailAddress ) { // will be undefined if not a valid email
+            contactService.addContact( $scope.emailAddress );
+        }
     };
 
     initialize();
