@@ -1,0 +1,39 @@
+<div class="profile-container">
+    <div class="profile-headshots col-lg-1">
+        <div class="profile-headshot hans" ng-mouseover="loadProfile(0)"></div>
+        <div class="profile-headshot lisa" ng-mouseover="loadProfile(1)"></div>
+        <div class="profile-headshot greg" ng-mouseover="loadProfile(2)"></div>
+        <div class="profile-headshot steve" ng-mouseover="loadProfile(3)"></div>
+    </div>
+
+    <div class="profile-description col-lg-2">
+        <h2 class="profile-name">{{currentProfile.name}}</h2>
+
+        <p>{{currentProfile.description}}</p>
+
+        <div class="profile-activity-container">
+            <div class="text-right">
+                <span class="profile-activity">{{currentProfile.activity}}</span>
+                <span class="profile-circle white-hexagon"></span>
+            </div>
+            <div class="text-right">
+                <span class="profile-activity">{{currentProfile.temperature}}</span>
+                <span class="profile-circle white-hexagon"></span>
+            </div>
+            <div class="text-right">
+                <span class="profile-activity">{{currentProfile.tripType}}</span>
+                <span class="profile-circle white-hexagon"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-4 no-padding-right">
+        <img ng-src="{{currentProfile.leftImg}}" class="img-gear img-responsive">
+    </div>
+    <div class="col-lg-4 no-padding-left">
+        <img ng-src="{{currentProfile.topRightImg}}" class="img-gear img-responsive">
+        <img ng-src="{{currentProfile.bottomRightImg}}" class="img-gear img-responsive">
+    </div>
+
+</div>
