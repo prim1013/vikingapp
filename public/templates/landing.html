@@ -136,7 +136,35 @@ h7.6V49.3c0-1.8-0.2-3.5-0.6-5C171.2,42.9,170.5,41.6,169.7,40.5z"/>
 
     </div>
     <div class="col-lg-3 app-icon-carousel-container">
-        <img src="../img/vikingmobile_homev2.png" class="img-gear img-responsive">
+        <!--<img src="../img/vikingmobile_homev2.png" class="img-gear img-responsive">-->
+        <div id="viking-app-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#viking-app-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#viking-app-carousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../img/vikingmobile_homev2.png" class="img-responsive">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../img/vikingmobile_new_tripv2.png" class="img-responsive">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" data-target="#viking-app-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" data-target="#viking-app-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+
     </div>
 
 </div>
