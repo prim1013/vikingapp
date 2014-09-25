@@ -1,0 +1,17 @@
+<div>
+
+    <h1 class="title title-color">The Viking Team</h1>
+
+    <div class="bio" ng-repeat="teamMember in teamMembers">
+        <span class="headshot" ng-class="teamMember.headshot"></span>
+
+        <div class="bio-text">
+            <h2>{{teamMember.name}}</h2>
+
+            <h3>{{teamMember.title}}</h3>
+
+            <p>{{teamMember.description}}</p>
+        </div>
+    </div>
+
+</div>

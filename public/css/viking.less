@@ -215,19 +215,16 @@ input[type="button"] {
   vertical-align: middle;
 }
 
-.team-row {
+.bio {
+  display: inline-block;
+  margin-right: -4px; // whitespace fix
+  margin-top: 100px;
+}
 
-  .bio {
-    display: inline-block;
-    margin-right: -4px; // whitespace fix
-    margin-top: 100px;
-  }
-
-  .bio-text {
-    display: inline-block;
-    color: @gray-text;
-    position: relative;
-  }
+.bio-text {
+  display: inline-block;
+  color: @gray-text;
+  position: relative;
 }
 
 .headshot {
@@ -657,15 +654,13 @@ input[type="button"] {
     }
   }
 
-  .team-row {
-    .bio {
-      width: 50%;
-      font-size: 1em;
-    }
+  .bio {
+    width: 50%;
+    font-size: 1em;
+  }
 
-    .bio-text {
-      max-width: 50%;
-    }
+  .bio-text {
+    max-width: 50%;
   }
 
   .navbar {

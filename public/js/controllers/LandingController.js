@@ -43,64 +43,33 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             tripType: 'Raid'
         }
     ];
+    var teamMembers = [
+        {
+            name: 'RICK PETRUCELLI',
+            headshot: 'rick',
+            title: 'BUSINESS PARTNER',
+            description: 'Rick has 10+ years in product management with focus on mobile and web based technology. Has an immense passion for gadgets and great design.'
+        },
+        {
+            name: 'KEITH MILLER',
+            headshot: 'keith',
+            title: 'DESIGN PARTNER',
+            description: 'Keith has over 13 years design experience, including Yahoo! Sports and ESPN.com. He was a designer at the startup Fastpoint Games with apprentice winner Kelly Perdew.'
+        },
+        {
+            name: 'KYLE AARON',
+            headshot: 'kyle',
+            title: 'DESIGN PARTNER',
+            description: 'A background in Product Design. Co-founded a creative agency. Over 10 years experience in Information Architecture & User Interface design. Keep it simple.'
+        },
+        {
+            name: 'CHRIS PRIMAVERA',
+            headshot: 'chris',
+            title: 'ENGINEERING PARTNER',
+            description: 'Web development professional with over 10 years of experience in the field. Technology, sports, and adventure enthusiast.'
+        }
+    ];
     var initialize = function () {
-        $scope.storyProgress = {
-            opacitySteps: [
-                {
-                    attribute: 'data-200p',
-                    value: 'opacity:0'
-                },
-                {
-                    attribute: 'data-230p',
-                    value: 'opacity:1'
-                },
-                {
-                    attribute: 'data-1400p',
-                    value: 'opacity:1'
-                },
-                {
-                    attribute: 'data-1500p',
-                    value: 'opacity:0'
-                }
-            ],
-            colorClass: 'progress-step-white',
-            innerColorClass: 'progress-step-inner-white',
-            steps: [
-                {
-                    opacitySteps: [
-                        {
-                            attribute: 'data-210p',
-                            value: 'opacity:0'
-                        },
-                        {
-                            attribute: 'data-230p',
-                            value: 'opacity:1'
-                        },
-                        {
-                            attribute: 'data-460p',
-                            value: 'opacity:0'
-                        }
-                    ]
-                },
-                {
-                    opacitySteps: [
-                        {
-                            attribute: 'data-460p',
-                            value: 'opacity:0'
-                        },
-                        {
-                            attribute: 'data-480p',
-                            value: 'opacity:1'
-                        },
-                        {
-                            attribute: 'data-710p',
-                            value: 'opacity:0'
-                        }
-                    ]
-                }
-            ]
-        };
-
 //        if ( !(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test( navigator.userAgent || navigator.vendor || window.opera ) ) {
         if ( !(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test( navigator.userAgent || navigator.vendor || window.opera ) ) {
             var s = skrollr.init();
@@ -112,13 +81,15 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
         }
 
         $scope.currentProfile = profiles[0];
+        $scope.teamMembers = teamMembers;
     };
 
-    $scope.currentProfile = {};
     $scope.emailAddress = '';
+
     $scope.loadProfile = function ( index ) {
         $scope.currentProfile = profiles[index];
     };
+
     $scope.addContact = function () {
         if ( $scope.emailAddress ) { // will be undefined if not a valid email
             contactService.addContact( $scope.emailAddress );
