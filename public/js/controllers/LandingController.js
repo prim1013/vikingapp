@@ -70,7 +70,6 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
         }
     ];
     var initialize = function () {
-//        if ( !(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test( navigator.userAgent || navigator.vendor || window.opera ) ) {
         if ( !(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test( navigator.userAgent || navigator.vendor || window.opera ) ) {
             var s = skrollr.init();
             skrollr.menu.init( s );
