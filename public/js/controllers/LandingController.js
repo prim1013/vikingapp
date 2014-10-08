@@ -21,8 +21,8 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             leftImg: '../img/lisa_left_470x641.png',
             topRightImg: '../img/lisa_topright_550x320.png',
             bottomRightImg: '../img/lisa_bottomright_gear_550x320.png',
-            activity: 'Surf',
-            activityClass: 'surf-icon',
+            activity: 'Hiking',
+            activityClass: 'hiking-icon',
             temperature: 'Warm',
             temperatureClass: 'warm-icon',
             tripType: 'Raid',
@@ -34,12 +34,12 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             leftImg: '../img/greg_left_470x641.png',
             topRightImg: '../img/greg_topright_550x320.png',
             bottomRightImg: '../img/greg_bottomright_gear_550x320.png',
-            activity: 'Surf',
-            activityClass: 'surf-icon',
-            temperature: 'Warm',
-            temperatureClass: 'warm-icon',
-            tripType: 'Raid',
-            tripTypeClass : 'beard-raid'
+            activity: 'Backpacking',
+            activityClass: 'backpacking-icon',
+            temperature: 'Cool',
+            temperatureClass: 'cool-icon',
+            tripType: 'Expedition',
+            tripTypeClass : 'beard-expedition'
         },
         {
             name: 'Steve King',
@@ -47,12 +47,12 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             leftImg: '../img/steve_left_470x641.png',
             topRightImg: '../img/steve_topright_550x320.png',
             bottomRightImg: '../img/stevek_bottomright_gear_550x320.png',
-            activity: 'Surf',
-            activityClass: 'surf-icon',
+            activity: 'Rafting',
+            activityClass: 'rafting-icon',
             temperature: 'Warm',
             temperatureClass: 'warm-icon',
-            tripType: 'Raid',
-            tripTypeClass : 'beard-raid'
+            tripType: 'Expedition',
+            tripTypeClass : 'beard-expedition'
         }
     ];
     var teamMembers = [
