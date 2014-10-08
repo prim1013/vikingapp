@@ -14,15 +14,15 @@
         <div class="profile-activity-container">
             <div class="text-right">
                 <span class="profile-activity">{{currentProfile.activity}}</span>
-                <span class="profile-circle white-hexagon"></span>
+                <span class="sprite-icon" ng-class="currentProfile.activityClass"></span>
             </div>
             <div class="text-right">
                 <span class="profile-activity">{{currentProfile.temperature}}</span>
-                <span class="profile-circle white-hexagon"></span>
+                <span class="sprite-icon" ng-class="currentProfile.temperatureClass"></span>
             </div>
             <div class="text-right">
                 <span class="profile-activity">{{currentProfile.tripType}}</span>
-                <span class="profile-circle white-hexagon"></span>
+                <span class="sprite-icon" ng-class="currentProfile.tripTypeClass"></span>
             </div>
         </div>
 

@@ -9,8 +9,11 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             topRightImg: '../img/hans_topright_550x320.png',
             bottomRightImg: '../img/hans_bottomright_gear_550x320.png',
             activity: 'Surf',
+            activityClass: 'surf-icon',
             temperature: 'Warm',
-            tripType: 'Raid'
+            temperatureClass: 'warm-icon',
+            tripType: 'Raid',
+            tripTypeClass : 'beard-raid'
         },
         {
             name: 'Lisa Wright',
@@ -19,8 +22,11 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             topRightImg: '../img/lisa_topright_550x320.png',
             bottomRightImg: '../img/lisa_bottomright_gear_550x320.png',
             activity: 'Surf',
+            activityClass: 'surf-icon',
             temperature: 'Warm',
-            tripType: 'Raid'
+            temperatureClass: 'warm-icon',
+            tripType: 'Raid',
+            tripTypeClass : 'beard-raid'
         },
         {
             name: 'Greg Wilsey',
@@ -29,8 +35,11 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             topRightImg: '../img/greg_topright_550x320.png',
             bottomRightImg: '../img/greg_bottomright_gear_550x320.png',
             activity: 'Surf',
+            activityClass: 'surf-icon',
             temperature: 'Warm',
-            tripType: 'Raid'
+            temperatureClass: 'warm-icon',
+            tripType: 'Raid',
+            tripTypeClass : 'beard-raid'
         },
         {
             name: 'Steve King',
@@ -39,8 +48,11 @@ viking.controller( 'LandingController', function LandingController ( $scope, con
             topRightImg: '../img/steve_topright_550x320.png',
             bottomRightImg: '../img/stevek_bottomright_gear_550x320.png',
             activity: 'Surf',
+            activityClass: 'surf-icon',
             temperature: 'Warm',
-            tripType: 'Raid'
+            temperatureClass: 'warm-icon',
+            tripType: 'Raid',
+            tripTypeClass : 'beard-raid'
         }
     ];
     var teamMembers = [
