@@ -4,6 +4,8 @@
 @fjord: #96d3cf;
 @expedition: #dedec9;
 
+@gear-title-height: 90px;
+
 @screen-sm-min: 768px;
 @screen-md-min: 992px;
 @screen-lg-min: 1200px;
@@ -69,15 +71,6 @@ body {
 
 .trip-type-container {
   display: none;
-}
-
-.trip-checklist {
-  margin-top: 1.5em;
-  text-align: center;
-
-  .trip-type {
-    font-size: 1.5em;
-  }
 }
 
 .img-1 {
@@ -151,6 +144,13 @@ body {
 
 .title-color {
   color: @gray-text !important;
+}
+
+.title-raid {
+  color: @epic-lettuce;
+}
+.title-journey {
+  color: @fjord;
 }
 
 .trip-raid {
@@ -297,12 +297,6 @@ input[type="button"] {
     cursor: pointer;
     background-position: 0px 0px;
   }
-}
-
-.trip-checklist-row {
-  text-align: center;
-  display: block;
-  margin-top: 2em;
 }
 
 .gray-hexagon {
@@ -484,16 +478,56 @@ input[type="button"] {
 }
 
 .beard-icon {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 53px;
   display: inline-block;
   position: relative;
-  top: 6px;
+  top: 15px;
+  background-image: url(http://localhost:3000/img/viking_sprite1.png);
+}
+
+.beard-raid {
+  background-position: -434px -120px;
+}
+
+.beard-journey {
+  background-position: -493px -120px;
+}
+
+.beard-expedition {
+  background-position: -552px -120px;
 }
 
 @media (min-width: @screen-sm-min) {
   #email-capture {
     margin-top: initial;
+  }
+
+  #email {
+    width: 430px;
+    height: 75px;
+    font-size: inherit;
+  }
+
+  #send {
+    width: 116px;
+    height: 75px;
+    font-size: inherit;
+  }
+
+  .raid-gear {
+    height: @gear-title-height;
+    background: url(http://localhost:3000/img/viking_sprite1.png) 0px -1358px;
+  }
+
+  .journey-gear {
+    height: @gear-title-height;
+    background: url(http://localhost:3000/img/viking_sprite1.png) 0px -1448px;
+  }
+
+  .expedition-gear {
+    height: @gear-title-height;
+    background: url(http://localhost:3000/img/viking_sprite1.png) 0px -1538px;
   }
 }
 
@@ -610,7 +644,7 @@ input[type="button"] {
   }
 
   .story-trip {
-    top: 150px;
+    top: 75px;
   }
 
   .story-team, .story-profiles {
@@ -649,23 +683,6 @@ input[type="button"] {
     }
   }
 
-  .trip-checklist-row {
-    display: inline-block;
-  }
-
-  .trip-checklist {
-    margin-top: 1.5em;
-    text-align: center;
-
-    .trip-type {
-      font-size: 2em;
-      position: relative;
-      top: -4px;
-      left: 5px;
-      margin-right: 2em;
-    }
-  }
-
   .bio {
     width: 50%;
     font-size: 1em;
@@ -690,7 +707,7 @@ input[type="button"] {
   }
 
   .title-trip {
-    text-align: center;
+    margin-bottom: 20px;
   }
 
   .app-icon-carousel-container {
